@@ -1,0 +1,22 @@
+#### Begin Variables Section ####
+SHELL=/bin/sh
+
+procmailDir=${HOME}/.procmail
+#LOGFILE=${HOME}/.procmail/logs
+#LOG="
+#"
+VERBOSE=no
+MAILDIR=${HOME}/Mail
+
+SUBJECT=`formail -zxSubject:`
+FROM=`formail -rt -xFrom:`
+TO=`formail -rt -xTo:`
+#BODY=`formail -c | mimecut`
+#_TEST_=`formail -I`
+
+HOSTNAME=${HOSTNAME:-`hostname`}
+
+#### End Variables Section ####
+
+INCLUDERC=${procmailDir}/rc-icm.uvos
+

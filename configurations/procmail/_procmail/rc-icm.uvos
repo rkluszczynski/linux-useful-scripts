@@ -1,0 +1,6 @@
+
+:0 f:
+	* ^From: doNotReply@alces.grid.icm.edu.pl
+	* ^Subject: A VO event occured:.*
+	plGrid/notifications/uvos
+
