@@ -1,0 +1,28 @@
+#### Begin Variables Section ####
+# Next line is needed if programs are invoked from your procmailrc
+SHELL=/bin/sh
+
+PMDIR=$HOME/.procmail
+#LOGFILE=$HOME/.procmail/logs
+#LOG="
+#"
+VERBOSE=no
+MAILDIR=$HOME/mail
+
+SUBJECT=`formail -zxSubject:`
+FROM=`formail -rt -xTo:`
+#BODY=`formail -c | mimecut`
+#_TEST_=`formail -I`
+
+HOSTNAME=${HOSTNAME:-`hostname`}
+
+#### End Variables Section; Begin Processing Section ####  
+
+#INCLUDERC=$PMDIR/rc.testing
+#INCLUDERC=$PMDIR/rc.holiday
+#INCLUDERC=$PMDIR/rc.zesp06
+
+
+#### End Processing Section #### 
+# EOF
+

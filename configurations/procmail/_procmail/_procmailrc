@@ -1,0 +1,39 @@
+#### Begin Variables Section ####
+
+# Next line is needed if programs are invoked from your procmailrc
+SHELL=/bin/sh
+
+PMDIR=$HOME/.procmail
+LOGFILE=$HOME/.procmail/logs
+LOG="
+"
+VERBOSE=yes
+MAILDIR=$HOME/mail
+
+# IMPORTANT:
+# * On most systems $MAILDIR is a subdirectory of $HOME
+# * Upon reading a line that contains MAILDIR=
+#     Procmail does a chdir to $MAILDIR
+#      ...and $MAILDIR becomes the Procmail working directory
+#       ...and relative paths are relative to $MAILDIR
+# * Do not include a trailing slash in your MAILDIR setting
+# * The $MAILDIR directory must exist and must be writable by
+# your LOGNAME
+# * The MAILDIR variable is an entirely different entity from
+# maildir mailbox format
+
+SUBJECT=`formail -zxSubject:`
+FROM=`formail -rt -xTo:`
+#BODY=`formail -c | mimecut`
+#_TEST_=`formail -I`
+
+HOSTNAME=${HOSTNAME:-`hostname`}
+
+#### End Variables Section; Begin Processing Section ####  
+
+#INCLUDERC=$PMDIR/rc.testing
+#INCLUDERC=$PMDIR/rc.holiday
+
+#### End Processing Section #### 
+# EOF
+
