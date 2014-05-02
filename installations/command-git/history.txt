@@ -1,0 +1,200 @@
+    97	2:45	vim _procmailrc
+    98	2:46	vim .procmail/
+    99	2:46	vim .procmail/rc.uvos
+   100	22:26	ls
+   101	22:26	ls -al
+   102	22:26	vim .procmail/
+   103	22:26	vim .procmail/rc.uvos
+   104	22:28	vim _procmailrc
+   105	22:30	mv _procmailrc .procmailrc
+   106	22:30	ls -al
+   107	22:30	vim .procmailrc
+   108	22:32	ls -la .procmail
+   109	22:32	vim .procmail
+   110	22:32	vim .procmailrc
+   111	22:33	vim .procmail/rc.uvos
+   112	22:53	vim .procmail/rc.uvos
+   113	22:55	ls -al
+   114	22:55	ls -al Maildir/
+   115	6:18	vim .procmail/rc.uvos
+   116	10:11	ls -al
+   117	10:11	git clone https://github.com/rkluszczynski/linux-useful-scripts.git
+   118	10:23	svn
+   119	10:23	git
+   120	10:23	pwd
+   121	10:23	gcc -version
+   122	10:24	gcc --version
+   123	10:24	mkdir src
+   124	10:24	ls
+   125	10:24	mkdir root
+   126	10:24	ls -al
+   127	10:24	cd root/
+   128	10:24	cd .
+   129	10:24	cd ..
+   130	10:24	cd src/
+   131	10:24	ls
+   132	10:25	wget https://codeload.github.com/git/git/tar.gz/v1.9.2
+   133	10:25	wget --no-ckeck-certificate https://codeload.github.com/git/git/tar.gz/v1.9.2
+   134	10:26	wget --no-ckeck-certificate "https://codeload.github.com/git/git/tar.gz/v1.9.2"
+   135	10:26	wget --no-check-certificate "https://codeload.github.com/git/git/tar.gz/v1.9.2"
+   136	10:26	ls
+   137	10:26	cd v1.9.2
+   138	10:26	ls
+   139	10:26	cd v1.9.2
+   140	10:26	ls
+   141	10:27	ls -al
+   142	10:27	tar zxvfp v1.9.2
+   143	10:27	mkdir ~/bin
+   144	10:27	ls -al
+   145	10:27	cd git-1.9.2/
+   146	10:27	ls -la
+   147	10:27	make
+   148	10:28	cc
+   149	10:28	ls
+   150	10:28	ls
+   151	10:28	vim INSTALL
+   152	10:28	vim Makefile
+   153	10:28	make
+   154	10:31	curl
+   155	10:32	cd ..
+   156	10:32	ls
+   157	10:32	wget http://curl.haxx.se/download/curl-7.36.0.tar.gz
+   158	10:32	ls -al
+   159	10:32	tar zxvfp curl-7.36.0.tar.gz
+   160	10:32	cd curl-7.36.0
+   161	10:32	ls -al
+   162	10:32	make
+   163	10:37	./configure --help
+   164	10:38	cd ../../
+   165	10:38	ls
+   166	10:38	mkdir my-soft
+   167	10:38	ls -al
+   168	10:38	mkdir apps
+   169	10:38	ls -al
+   170	10:38	cd ..
+   171	10:38	cd
+   172	10:39	cd src/curl-7.36.0
+   173	10:39	ls
+   174	10:39	./configure --prefix=/home/staff/klusi/apps/
+   175	10:39	make clean
+   176	10:39	./configure --prefix=/home/staff/klusi/apps/
+   177	10:41	make
+   178	10:44	make install
+   179	10:44	ls -la
+   180	10:44	cd
+   181	10:44	ls
+   182	10:44	cd apps/
+   183	10:44	ls -la
+   184	10:44	ls lib/
+   185	10:44	ls -al
+   186	10:44	ls bin/
+   187	10:45	echo $SHELL
+   188	10:45	vim ../.cshrc
+   189	13:12	ls -al
+   190	13:12	vim .cshrc
+   191	13:14	ls -al
+   192	13:14	rmdir bin
+   193	13:14	ls
+   194	13:14	rmdir root
+   195	13:14	ls
+   196	13:14	rmdir my-soft/
+   197	13:14	ls -al
+   198	13:15	source .cshrc
+   199	13:15	ls -al
+   200	13:15	curl
+   201	21:43	ls -al
+   202	21:43	c aap
+   203	21:43	cd apps/
+   204	21:43	ls -al
+   205	21:43	ccd bi
+   206	21:43	cd bin/
+   207	21:43	ls
+   208	21:44	cp ~/bin/git* .
+   209	21:44	ls -al
+   210	21:44	mv ~/bin/git* .
+   211	21:44	ls -al
+   212	21:44	./git
+   213	21:44	cd ..
+   214	21:44	ls
+   215	21:44	cd .
+   216	21:44	ls
+   217	21:44	cd ..
+   218	21:44	sl -al
+   219	21:44	ls -al
+   220	21:44	ls
+   221	21:44	rmdir bin/
+   222	21:44	ls
+   223	21:44	ls lib
+   224	21:44	rm lib
+   225	21:44	rm -rf lib
+   226	21:44	ls -la
+   227	21:44	ls libexec/
+   228	21:45	cd src/
+   229	21:45	ls a-l
+   230	21:45	ls -al
+   231	21:45	cd git-1.9.2/
+   232	21:45	ls
+   233	21:45	gmake clean
+   234	21:45	ls -al
+   235	21:45	ls
+   236	21:45	ls
+   237	21:45	vim INSTALL
+   238	21:45	ls -la
+   239	21:46	setenv CURLDIR /home/staff/klusi/apps/
+   240	21:46	ls -la ~/apps/
+   241	21:46	ls -la ~/apps/bin/
+   242	21:46	ls -la ~/apps/bin/git*
+   243	21:46	rm ~/apps/bin/git*
+   244	21:46	ls -al
+   245	21:47	gmake prefix=/home/staff/klusi/apps
+   246	21:51	git install
+   247	21:51	gmake install
+   248	21:52	ls -la
+   249	21:52	ls -la ~
+   250	21:52	gmake prefix=/home/staff/klusi/apps install
+   251	21:53	ls -la $HOME/apps/bin/
+   252	21:53	cd
+   253	21:53	ls -al
+   254	21:53	rm -rf bin/ lib libexec/ share/
+   255	21:53	ls -la
+   256	21:53	ls -al apps/
+   257	21:54	ls -al apps/lib
+   258	21:54	ls -al apps/libexec/
+   259	21:54	ls -al
+   260	21:54	git
+   261	21:54	source .cshrc
+   262	21:54	git
+   263	21:54	history > history.txt
+   264	21:54	less history.txt
+   265	21:54	git clone https://github.com/rkluszczynski/linux-useful-scripts.git
+   266	21:55	openssl
+   267	21:55	openssl --version
+   268	21:55	openssl -version
+   269	21:56	openssl version
+   270	21:56	ls -al
+   271	21:56	cd src/
+   272	21:56	ls
+   273	21:56	cd curl-7.36.0
+   274	21:56	ls -al
+   275	21:56	./configure
+   276	21:58	ls -la
+   277	21:58	cd ..
+   278	21:58	ls
+   279	21:58	cd git-1.9.2/
+   280	21:58	ls -al
+   281	21:58	gmake clean
+   282	21:59	( gmake ) > ../log 2 > & 1
+   283	21:59	ls -al
+   284	21:59	sh
+   285	21:59	bash
+   286	21:59	chsh
+   287	21:59	bash
+   288	22:10	cd
+   289	22:10	ls
+   290	22:10	git clone https://github.com/rkluszczynski/linux-useful-scripts.git
+   291	22:10	git clone http://github.com/rkluszczynski/linux-useful-scripts.git
+   292	22:11	git config --global http.sslVerify false
+   293	22:11	git clone https://github.com/rkluszczynski/linux-useful-scripts.git
+   294	22:11	ls -al
+   295	22:12	vim .gitconfig
+   296	22:12	history > history.txt
