@@ -1,0 +1,139 @@
+#
+# Based on polish blog sites:
+#  -) http://czytelnia.ubuntu.pl/index.php/2014/04/17/ubuntu-14-04-trusty-tahr-co-zrobic-i-zainstalowac-po-instalacji-systemu/
+#  -) https://www.tomick.pl/oprogramowanie/13-rzeczy-do-zrobienia-po-instalacji-ubuntu-14-04-trusty-tahr-przewodnik-uzytkownika/
+#
+#	Thanks for authors!
+#
+
+
+#  *** USER SECTION ***
+#
+
+01. Ubuntu distribution udpate:
+
+	# apt-get update && sudo apt-get dist-upgrade
+	# apt-get autoremove
+
+02. In configuration panel turn on commercial friendly repositories 
+	for Ubuntu.
+
+03. If neccessery make polish OS:
+
+	# apt-get install manpages-pl
+
+04. Install restricted extras with codes etc:
+
+	# apt-get install ubuntu-restricted-extras
+	# apt-get install libxine1-ffmpeg libxine2-ffmpeg gxine mencoder \
+		icedax tagtool easytag id3tool lame \
+		nautilus-script-audio-convert mpg321
+
+05. Installing Adobe Flash Player:
+
+	# apt-get install flashplugin-installer
+
+06. Installing Java JRE and browser plugin:
+
+	# apt-get install icedtea-7-plugin openjdk-7-jre
+
+   Eventually:
+
+	# apt-get install openjdk-7-jdk
+
+07. Changing Totem to my favourite VLC player:
+ 
+	# apt-get install vlc
+
+08. Installing better package manager for ubuntu called Synaptic:
+
+	# apt-get install synaptic
+
+09. Tool for changing Unity graphical environment behaviour:
+
+	# apt-get install unity-tweak-tool
+
+10. For laptops install default tool from ubunut repository:
+
+	# apt-get install laptop-mode-tools
+
+11. Install quick file viewer GNOME Sushi:
+
+	# apt-get install gnome-sushi unoconv
+
+12. Install Skype from commercial friendly repos:
+
+	# apt-get install skype
+
+13. Install GIMP:
+
+	# apt-get install gimp gimp-plugin-registry
+
+14. Install Silverlight (Pipelight) support (not working in Chrome):
+
+	# apt-add-repository ppa:pipelight/stable
+	# apt-get update
+	# apt-get install pipelight-multi
+
+	# pipelight-plugin --enable silverlight
+	# pipelight-plugin --enable widevine
+
+15. For using encrypted DVDs:
+
+	# apt-get install libdvdread4
+	# /usr/share/doc/libdvdread4/install-css.sh
+
+16. To clean system time to time:
+
+	# apt-get install bleachbit
+
+
+# *** OS CONFIGURATION SECTION ***
+#
+
+30. Turn off guest account:
+
+	# sudo sh -c 'printf "[SeatDefaults]\nallow-guest=false\n" > /usr/share/lightdm/lightdm.conf.d/50-no-guest.conf'
+
+31. Turn off automatic error reports:
+
+	# sed -i 's/^enabled\=1$/enabled\=0/' /etc/default/apport 
+	#service apport stop
+
+32. Get 'normal' scrollbars instead 'overlay-auto': 
+
+	# gsettings set com.canonical.desktop.interface scrollbar-mode normal
+
+33. See real name in session menu:
+
+	# gsettings set com.canonical.indicator.session show-real-name-on-panel true
+
+34. Usefull weather indicator for menu bar:
+
+	# add-apt-repository ppa:atareao/atareao
+	# apt-get update
+	# apt-get install my-weather-indicator
+
+35. Usefull TODO indicator for menu bar (stores entries in $HOME/todo.txt):
+
+	# add-apt-repository ppa:nilarimogard/webupd8
+	# apt-get update
+	# apt-get install todo-indicator 
+
+36. Google drive for ubuntu:
+
+	# add-apt-repository ppa:thefanclub/grive-tools
+	# apt-get update
+	# apt-get install grive-tools
+
+
+# *** DEVELOPERS SECTION ***
+#
+
+70. Tools for compiling programs etc.:
+
+	# apt-get install build-essential cdbs check checkinstall devscripts dh-make fakeroot libxml-parser-perl
+
+
+99. DONE ;-)
+
