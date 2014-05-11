@@ -1,0 +1,6 @@
+
+:0 f:
+        * ^From: doNotReply@plgrid.pl
+        * ^Subject: .*[PL-Grid Portal] Us.ugi - Automatyczne przyznanie us.ugi - .*
+        plGrid/notifications/plgPortal
+

@@ -1,0 +1,6 @@
+
+:0 f:
+        * ^From: .*nagios@ngi-mon.*
+        * ^Subject: [SAM Nagios] .+ - .+/.+
+        plGrid/notifications/nagios-sam
+
