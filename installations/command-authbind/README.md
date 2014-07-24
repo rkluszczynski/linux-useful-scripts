@@ -14,3 +14,8 @@ root:/etc/authbind# tree -ugh
 3 directories, 1 file
 ```
 
+RPM building
+------------
+
+See: https://github.com/tootedom/authbind-centos-rpm
+
