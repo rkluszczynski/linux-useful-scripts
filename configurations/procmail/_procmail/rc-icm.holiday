@@ -14,10 +14,12 @@
 * !^X-Loop: $LOGNAME@$HOSTNAME
 #* ^From:.*@(gmail\.com.*|mat\..*\.pl.*)
 #* ^From:.*@(gmail\.com.*|wp\.pl.*)
+* !^From:.*nagios@.*
+* !^From:.*(not|no).*reply@.*
 #* !^To:.*mat.*@.*
 * ^To:.*(klusi|rkluszczynski|rafal.kluszczynski|r.kluszczynski).*@(.*\.pl.*)
 #* ^Subject:.*\<test\>
-| formail -rD 8192 ${procmailDir}/vacation.cache ; \
+| formail -rD 8192 ${HOME}/vacation.cache ; \
 	( formail -r \
 		-I"Precedence: junk (autoreply)" \
 		-I"From: klusi@icm.edu.pl" \
