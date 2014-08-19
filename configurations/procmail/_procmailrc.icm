@@ -21,4 +21,5 @@ HOSTNAME=${HOSTNAME:-`hostname`}
 INCLUDERC=${procmailDir}/rc-icm.uvos
 INCLUDERC=${procmailDir}/rc-icm-plg.portal
 INCLUDERC=${procmailDir}/rc-icm-plg.sam
+#INCLUDERC=${procmailDir}/rc-icm.holiday
 

@@ -1,0 +1,29 @@
+
+:0 c: holiday.lock
+# and the message is not from a daemon or mailer
+* !^FROM_DAEMON
+* !^FROM_MAILER
+# not declared spam by spamassassin
+* !^X-Spam-Flag: YES
+# not discernably in a mailing list
+* !^List-
+* !^(Mailing-List|Approved-By|BestServHost|Resent-(Message-ID|Sender)):
+* !^X-[^:]*-List:
+* !^X-(Sent-To|(Listprocessor|Mailman)-Version):
+# and not x-loop
+* !^X-Loop: $LOGNAME@$HOSTNAME
+#* ^From:.*@(gmail\.com.*|mat\..*\.pl.*)
+#* ^From:.*@(gmail\.com.*|wp\.pl.*)
+#* !^To:.*mat.*@.*
+* ^To:.*(klusi|rkluszczynski|rafal.kluszczynski|r.kluszczynski).*@(.*\.pl.*)
+#* ^Subject:.*\<test\>
+| formail -rD 8192 ${procmailDir}/vacation.cache ; \
+	( formail -r \
+		-I"Precedence: junk (autoreply)" \
+		-I"From: klusi@icm.edu.pl" \
+		-I"Subject: [ Auto-Reply ] : $SUBJECT" \
+		-I"To: $FROM" \
+		-A"X-Loop: $LOGNAME@$HOSTNAME" ; \
+		cat ${procmailDir}/holiday-autoreply.txt \
+	) | $SENDMAIL -oi -t;
+
