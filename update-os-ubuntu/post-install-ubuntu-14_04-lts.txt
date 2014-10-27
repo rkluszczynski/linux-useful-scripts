@@ -114,13 +114,17 @@
 	# apt-get update
 	# apt-get install my-weather-indicator
 
-35. Usefull TODO indicator for menu bar (stores entries in $HOME/todo.txt):
+35. Idicator with system load: 
+
+	# sudo apt-get install indicator-multiload
+
+36. Usefull TODO indicator for menu bar (stores entries in $HOME/todo.txt):
 
 	# add-apt-repository ppa:nilarimogard/webupd8
 	# apt-get update
 	# apt-get install todo-indicator 
 
-36. Google drive for ubuntu:
+37. Google drive for ubuntu:
 
 	# add-apt-repository ppa:thefanclub/grive-tools
 	# apt-get update
